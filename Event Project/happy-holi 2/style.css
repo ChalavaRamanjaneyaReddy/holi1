@@ -1,0 +1,49 @@
+
+.svg-box {
+	position: absolute;
+	animation-name: rotAnimation;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+}
+
+marquee {
+	width: 100%;
+	position: absolute;
+	z-index: 10;
+	text-align: center;
+	font-size: 250px;
+	color: rgb(206, 94, 94);
+}
+
+@keyframes rotAnimation {
+	0% {
+		transform: scale(0.3);
+	}
+
+	100% {
+		transform: scale(1.0);
+	}
+}
+
+#blue {
+	height: 100px;
+	width: 100px;
+	border: 1px solid blue;
+	background: blue;
+	margin-left: 500px;
+	margin-top: 50px;
+}
+
+.marqueeAni {
+	animation: blinker 1.5s linear infinite;
+	color: red;
+	font-family: sans-serif;
+}
+
+@keyframes blinker {
+	50% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+
+}
